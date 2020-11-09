@@ -36,6 +36,10 @@ class BurpExtender(IBurpExtender, IScannerCheck):
     # add your regex here
     regexs = {
         'google_api' : 'AIza[0-9A-Za-z-_]{35}',
+        'docs_file_exetension' : '^.*\.(xls|xlsx|doc|docx)$',
+        'bitcoin_address' : '([13][a-km-zA-HJ-NP-Z0-9]{26,33})',
+        'slack_api_key' : 'xox.-[0-9]{12}-[0-9]{12}-[0-9a-zA-Z]{24}',
+        'us_cn_zipcode' : '/(^\d{5}(-\d{4})?$)|(^[ABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Z]{1} *\d{1}[A-Z]{1}\d{1}$)/',
         'google_cloud_platform_auth' : '[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}',
         'google_cloud_platform_api' : '[A-Za-z0-9_]{21}--[A-Za-z0-9_]{8}',
         'amazon_secret_key' : '[0-9a-zA-Z/+]{40}',
