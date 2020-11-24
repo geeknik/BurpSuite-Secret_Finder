@@ -90,7 +90,7 @@ class BurpExtender(IBurpExtender, IScannerCheck):
             tmp_issues = self._CustomScans.findRegEx(
                 BurpExtender.regex.replace(r'%%regex%%',reg[1]), 
                 BurpExtender.issuename%(' '.join([x.title() for x in reg[0].split('_')])),
-                BurpExtender.ssuelevel, 
+                BurpExtender.issuelevel, 
                 BurpExtender.issuedetail
                 )
             scan_issues = scan_issues + tmp_issues
