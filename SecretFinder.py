@@ -69,7 +69,7 @@ class BurpExtender(IBurpExtender, IScannerCheck):
         'github_access_token' : '[a-zA-Z0-9_-]*:[a-zA-Z0-9_\-]+@github\.com*',
         'rsa_private_key' : '-----BEGIN RSA PRIVATE KEY-----',
         'ssh_dsa_private_key' : '-----BEGIN DSA PRIVATE KEY-----',
-        'ssh_dc_private_key' : '-----BEGIN EC PRIVATE KEY-----',
+        'ssh_ec_private_key' : '-----BEGIN EC PRIVATE KEY-----',
         'pgp_private_block' : '-----BEGIN PGP PRIVATE KEY BLOCK-----',
         'openssh_private_key' : '-----BEGIN OPENSSH PRIVATE KEY-----',
         'tls_private_key' : '-----BEGIN PRIVATE KEY-----',
