@@ -71,6 +71,8 @@ class BurpExtender(IBurpExtender, IScannerCheck):
         'ssh_dsa_private_key' : '-----BEGIN DSA PRIVATE KEY-----',
         'ssh_dc_private_key' : '-----BEGIN EC PRIVATE KEY-----',
         'pgp_private_block' : '-----BEGIN PGP PRIVATE KEY BLOCK-----',
+        'openssh_private_key' : '-----BEGIN OPENSSH PRIVATE KEY-----',
+        'tls_private_key' : '-----BEGIN PRIVATE KEY-----',
         'json_web_token' : 'ey[A-Za-z0-9_-]*\.[A-Za-z0-9._-]*|ey[A-Za-z0-9_\/+-]*\.[A-Za-z0-9._\/+-]*'
     }
     regex = r"[:|=|\'|\"|\s*|`|´| |,|?=|\]|\|//|/\*}](%%regex%%)[:|=|\'|\"|\s*|`|´| |,|?=|\]|\}|&|//|\*/]"
